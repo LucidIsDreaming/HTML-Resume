@@ -5,7 +5,6 @@
 
 :root {
     --primary-border: black;
-    --secondary-border: white;
     --text: white;
     --background: rgb(175, 143, 0);
 }
@@ -76,7 +75,7 @@ h2 {
     height: 250px;
 
     border-radius: 1rem;
-    border: 3px solid var(--secondary-border)
+    border: 3px solid var(--primary-border)
     /*shadow?*/
 }
 
@@ -92,8 +91,55 @@ h4 {
     margin-bottom: 1rem;
 }
 
+/*experience and skills*/
 
+#experience {
+    padding-top: 1rem;
+}
 
+#technical-skills {
+    margin-top: 2rem;
+    padding-top: 1rem;
 
+    border-top: 3px solid var(--primary-border);
+}
 
+/*lists*/
+
+ul {
+    padding-left: 1rem;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+}
+
+li {
+    margin-bottom: .5rem;
+    padding-left: 1rem;
+}
+
+/*link hover*/
+
+a{
+    color: var(--text);
+}
+
+a:hover{
+    color: rgb(175, 143, 0);
+}
+
+/*phone flexbox*/
+@media (max-width: 600px){
+
+    body {
+        padding: 1rem;
+    }
+
+    #main {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+}
 
