@@ -4,8 +4,8 @@
 }
 
 :root {
-    --primary: black;
-    --secondary: ;
+    --primary-border: black;
+    --secondary-border: white;
     --text: white;
     --background: rgb(175, 143, 0);
 }
@@ -19,9 +19,13 @@ body {
 
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
+    letter-spacing: 1px;
+    line-height: 1.6;
+
 }
 
 #main{
+    max-width: 900px;
     margin: auto;
     padding: 1rem;
 
@@ -31,7 +35,24 @@ body {
 
 #header{
     padding-bottom: 1rem;
-    border-bottom: 1rem solid var(--primary);
+    border-bottom: 5px solid var(--primary-border);
 }
 
+#header img {
+    width: 190px;
+    height: 250px;
+
+    border-radius: 1rem;
+    border: 3px solid var(--secondary-border)
+}
+
+h1 {
+    margin: 0;
+    color: var(--text);
+    font-size: 2rem;
+}
+
+.subtitle {
+
+}
 
