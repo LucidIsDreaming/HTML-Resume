@@ -38,21 +38,50 @@ body {
     border-bottom: 5px solid var(--primary-border);
 }
 
+h1 {
+    margin: 0;
+    color: var(--text);
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+/*trying flexbox*/
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 1rem;
+}
+
+.header-text{
+    flex: 1;
+    min-width: 0;
+    padding-right: 2rem;
+
+}
+
+.header-text p {
+    overflow-wrap: anywhere;
+}
+
 #header img {
     width: 190px;
     height: 250px;
 
     border-radius: 1rem;
     border: 3px solid var(--secondary-border)
+    /*shadow?*/
 }
 
-h1 {
-    margin: 0;
-    color: var(--text);
-    font-size: 2rem;
-}
 
-.subtitle {
 
-}
+
+
 
