@@ -74,9 +74,12 @@ h2 {
     width: 190px;
     height: 250px;
 
+    object-fit: cover;
+    max-width: 100%;
+
     border-radius: 1rem;
     border: 3px solid var(--primary-border);
-    /*shadow?*/
+    box-shadow: 0 4px 10px black;
 }
 
 h3 {
@@ -128,7 +131,7 @@ a:hover{
 }
 
 a:focus{
-    outline: 3px solid var (--background);
+    outline: 3px solid var(--background);
     outline-offset: 4px;
     border-radius: 3px;
 }
@@ -162,7 +165,7 @@ a:focus{
     }
 
     .header-text {
-        width: 100%
+        width: 100%;
         padding-right: 0;
     }
 
