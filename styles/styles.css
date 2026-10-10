@@ -6,7 +6,7 @@
 :root {
     --primary-border: black;
     --text: white;
-    --background: rgb(175, 143, 0);
+    --background: rgb(217, 184, 0);
 }
 
 body {
@@ -75,14 +75,14 @@ h2 {
     height: 250px;
 
     border-radius: 1rem;
-    border: 3px solid var(--primary-border)
+    border: 3px solid var(--primary-border);
     /*shadow?*/
 }
 
 h3 {
     font-size: 1rem;
     margin-top: 1rem;
-    margin-bottom: .5 rem;
+    margin-bottom: .5rem;
 }
 
 h4 {
@@ -127,6 +127,12 @@ a:hover{
     color: rgb(175, 143, 0);
 }
 
+a:focus{
+    outline: 3px solid var (--background);
+    outline-offset: 4px;
+    border-radius: 3px;
+}
+
 /*phone flexbox*/
 @media (max-width: 600px){
 
@@ -147,7 +153,7 @@ a:hover{
     }
 
     h3{
-        font-size: .5rem;
+        font-size: 1rem;
     }
 
     .header-content {
@@ -156,7 +162,8 @@ a:hover{
     }
 
     .header-text {
-        padding-right: 5px;
+        width: 100%
+        padding-right: 0;
     }
 
     #header img {
